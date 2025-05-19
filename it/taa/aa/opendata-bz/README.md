@@ -1,22 +1,24 @@
 1. Install Python: Ensure you have Python 3.9 installed. You can download it from the official Python website.
-
+    
 2. Create an env
-    python3.9 -m venv myenv
-    source myenv/bin/activate
+    pyenv virtualenv 3.9.7 opendata-bz
+    pyenv activate opendata-bz
 
 3. Install Google Chrome: Download and install Google Chrome from the official website.
 
 4. Install ChromeDriver: Download ChromeDriver from the official site. Ensure the version matches your Chrome version. Place the chromedriver executable in a directory included in your system's PATH or specify its location in your script.
 
 5. Install required Python packages:
+    pip install --upgrade pip
     pip install -r requirements.txt
 
-6. Activate the virtual environment:
-    python3.9 -m venv myenv
-    source myenv/bin/activate
+6. Run the script (change CONFIG_FILE and OUTPUT_PATH accordingly):
+    CONFIG_FILE=./etc/config/config.json && OUTPUT_PATH=/media/lacie2022/data/meteo/eu/it/taa/aa/online/ && python ./src/download.py --configuration_file=$CONFIG_FILE --output_path=$OUTPUT_PATH --no-docker
 
-7. Install the required packages:
-    pip install -r requirements.txt
+ALTERNATIVE with Docker:
 
-8. Run the script:
-    source /media/windows/projects/scripts/meteoaltoadige/myenv/bin/activate && python /media/windows/projects/scripts/meteoaltoadige/download.py /media/windows/projects/scripts/meteoaltoadige/ /media/windows/projects/scripts/meteoaltoadige/config.json
+- build the image:
+    docker build -f ./Dockerfile -t opendata-bz:2.0 .
+
+- run the script (change CONFIG_FILE and OUTPUT_PATH accordingly)
+    CONFIG_FILE=./etc/config/config.json && OUTPUT_PATH=/media/lacie2022/data/meteo/eu/it/taa/aa/online/ && docker run --rm -v $CONFIG_FILE:/home/chromedriver/etc/conf/config.json -v $OUTPUT_PATH:/home/chromedriver/output/ opendata-bz:2.0
