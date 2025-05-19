@@ -1,0 +1,91 @@
+{
+    "id": 13,
+    "name": "61690SF",
+    "provider": {
+        "name": "meteoaltoadige",
+        "id": null,
+        "notes": {
+            "SCODE": "61690SF",
+            "NAME_D": "Abtei Piz La Ila",
+            "NAME_I": "Badia Piz La Ila",
+            "NAME_L": "Val Badia - Piz La Ila",
+            "NAME_E": "Abtei Piz la Ila",
+            "ALT": 2050,
+            "LONG": 11.9036,
+            "LAT": 46.565
+        }
+    },
+    "location": {
+        "x": 11.9036,
+        "y": 46.565,
+        "z": 2050,
+        "EPSG": "4326"
+    },
+    "sensors": [
+        {
+            "id": "LT",
+            "status": null,
+            "variable": "temperature",
+            "units": "\u00b0C",
+            "format": "float",
+            "quality": null,
+            "datetime_format": "%Y-%m-%dT%H:%M:%SZ%z",
+            "datapath": "./output/temperature/61690SF.csv",
+            "start_date": null,
+            "end_date": null,
+            "step_mins": null
+        },
+        {
+            "id": "WG",
+            "status": null,
+            "variable": "wind_velocity",
+            "units": "m/s",
+            "format": "float",
+            "quality": null,
+            "datetime_format": "%Y-%m-%dT%H:%M:%SZ%z",
+            "datapath": "./output/wind_velocity/61690SF.csv",
+            "start_date": null,
+            "end_date": null,
+            "step_mins": null
+        },
+        {
+            "id": "WG.BOE",
+            "status": null,
+            "variable": "wind_burst",
+            "units": "m/s",
+            "format": "float",
+            "quality": null,
+            "datetime_format": "%Y-%m-%dT%H:%M:%SZ%z",
+            "datapath": "./output/wind_burst/61690SF.csv",
+            "start_date": null,
+            "end_date": null,
+            "step_mins": null
+        },
+        {
+            "id": "LF",
+            "status": null,
+            "variable": "relative_humidity",
+            "units": "%",
+            "format": "float",
+            "quality": null,
+            "datetime_format": "%Y-%m-%dT%H:%M:%SZ%z",
+            "datapath": "./output/relative_humidity/61690SF.csv",
+            "start_date": null,
+            "end_date": null,
+            "step_mins": null
+        },
+        {
+            "id": "HS",
+            "status": null,
+            "variable": "snow_depth",
+            "units": "cm",
+            "format": "float",
+            "quality": null,
+            "datetime_format": "%Y-%m-%dT%H:%M:%SZ%z",
+            "datapath": "./output/snow_depth/61690SF.csv",
+            "start_date": null,
+            "end_date": null,
+            "step_mins": null
+        }
+    ]
+}

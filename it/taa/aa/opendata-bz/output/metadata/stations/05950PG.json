@@ -1,0 +1,52 @@
+{
+    "id": 24,
+    "name": "05950PG",
+    "provider": {
+        "name": "meteoaltoadige",
+        "id": null,
+        "notes": {
+            "SCODE": "05950PG",
+            "NAME_D": "ETSCH BEI SPONDINIG",
+            "NAME_I": "ADIGE A SPONDIGNA",
+            "NAME_L": "ETSCH BEI SPONDINIG",
+            "NAME_E": "ETSCH BEI SPONDINIG",
+            "ALT": 882.34,
+            "LONG": 10.60352,
+            "LAT": 46.63648
+        }
+    },
+    "location": {
+        "x": 10.60352,
+        "y": 46.63648,
+        "z": 882.34,
+        "EPSG": "4326"
+    },
+    "sensors": [
+        {
+            "id": "Q",
+            "status": null,
+            "variable": "streamflow",
+            "units": "m\u00b3/s",
+            "format": "float",
+            "quality": null,
+            "datetime_format": "%Y-%m-%dT%H:%M:%SZ%z",
+            "datapath": "./output/streamflow/05950PG.csv",
+            "start_date": null,
+            "end_date": null,
+            "step_mins": null
+        },
+        {
+            "id": "W",
+            "status": null,
+            "variable": "hydro_level",
+            "units": "cm",
+            "format": "float",
+            "quality": null,
+            "datetime_format": "%Y-%m-%dT%H:%M:%SZ%z",
+            "datapath": "./output/hydro_level/05950PG.csv",
+            "start_date": null,
+            "end_date": null,
+            "step_mins": null
+        }
+    ]
+}

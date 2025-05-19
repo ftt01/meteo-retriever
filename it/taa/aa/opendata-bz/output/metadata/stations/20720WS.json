@@ -1,0 +1,78 @@
+{
+    "id": 22,
+    "name": "20720WS",
+    "provider": {
+        "name": "meteoaltoadige",
+        "id": null,
+        "notes": {
+            "SCODE": "20720WS",
+            "NAME_D": "Pfelders Rauhjoch",
+            "NAME_I": "Monte Scabro di Plan",
+            "NAME_L": "Pfelders Rauhjoch",
+            "NAME_E": "Pfelders Rauhjoch",
+            "ALT": 2926,
+            "LONG": 11.1146,
+            "LAT": 46.8289
+        }
+    },
+    "location": {
+        "x": 11.1146,
+        "y": 46.8289,
+        "z": 2926,
+        "EPSG": "4326"
+    },
+    "sensors": [
+        {
+            "id": "LT",
+            "status": null,
+            "variable": "temperature",
+            "units": "\u00b0C",
+            "format": "float",
+            "quality": null,
+            "datetime_format": "%Y-%m-%dT%H:%M:%SZ%z",
+            "datapath": "./output/temperature/20720WS.csv",
+            "start_date": null,
+            "end_date": null,
+            "step_mins": null
+        },
+        {
+            "id": "WG",
+            "status": null,
+            "variable": "wind_velocity",
+            "units": "m/s",
+            "format": "float",
+            "quality": null,
+            "datetime_format": "%Y-%m-%dT%H:%M:%SZ%z",
+            "datapath": "./output/wind_velocity/20720WS.csv",
+            "start_date": null,
+            "end_date": null,
+            "step_mins": null
+        },
+        {
+            "id": "WG.BOE",
+            "status": null,
+            "variable": "wind_burst",
+            "units": "m/s",
+            "format": "float",
+            "quality": null,
+            "datetime_format": "%Y-%m-%dT%H:%M:%SZ%z",
+            "datapath": "./output/wind_burst/20720WS.csv",
+            "start_date": null,
+            "end_date": null,
+            "step_mins": null
+        },
+        {
+            "id": "LF",
+            "status": null,
+            "variable": "relative_humidity",
+            "units": "%",
+            "format": "float",
+            "quality": null,
+            "datetime_format": "%Y-%m-%dT%H:%M:%SZ%z",
+            "datapath": "./output/relative_humidity/20720WS.csv",
+            "start_date": null,
+            "end_date": null,
+            "step_mins": null
+        }
+    ]
+}

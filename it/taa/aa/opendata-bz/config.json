@@ -1,0 +1,29 @@
+{
+  "project_name": "PhD",
+  "input": {
+    "provider_name": "meteoaltoadige",
+    "timezone": "Europe/Rome"
+  },
+  "output": {
+    "path": "/media/lacie2022/data/meteo/eu/it/taa/aa/online/",
+    "metadata": "metadata/",
+    "datetime_format": "%Y-%m-%dT%H:%M:%SZ%z",
+    "timezone": "UTC",
+    "method": "update"
+  },
+  "start_date": "20250514",
+  "end_date": null,
+  "quality_check": false,
+  "update_start_date": true,
+  "log": {
+    "path": "logs/",
+    "level": "info"
+  },
+  "script": {
+    "version": "v1.0.0",
+    "authors": [
+      "ftt01 (dallatorre.daniele@gmail.com)"
+    ]
+  },
+  "email": true
+}

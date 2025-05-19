@@ -1,0 +1,78 @@
+{
+    "id": 25,
+    "name": "91210WS",
+    "provider": {
+        "name": "meteoaltoadige",
+        "id": null,
+        "notes": {
+            "SCODE": "91210WS",
+            "NAME_D": "Toblach Hochebenkofel",
+            "NAME_I": "Dobbiaco Cima Piatta Alta",
+            "NAME_L": "Toblach Hochebenkofel",
+            "NAME_E": "Toblach Hochebenkofel",
+            "ALT": 2906,
+            "LONG": 12.2573,
+            "LAT": 46.6802
+        }
+    },
+    "location": {
+        "x": 12.2573,
+        "y": 46.6802,
+        "z": 2906,
+        "EPSG": "4326"
+    },
+    "sensors": [
+        {
+            "id": "LT",
+            "status": null,
+            "variable": "temperature",
+            "units": "\u00b0C",
+            "format": "float",
+            "quality": null,
+            "datetime_format": "%Y-%m-%dT%H:%M:%SZ%z",
+            "datapath": "./output/temperature/91210WS.csv",
+            "start_date": null,
+            "end_date": null,
+            "step_mins": null
+        },
+        {
+            "id": "WG",
+            "status": null,
+            "variable": "wind_velocity",
+            "units": "m/s",
+            "format": "float",
+            "quality": null,
+            "datetime_format": "%Y-%m-%dT%H:%M:%SZ%z",
+            "datapath": "./output/wind_velocity/91210WS.csv",
+            "start_date": null,
+            "end_date": null,
+            "step_mins": null
+        },
+        {
+            "id": "WG.BOE",
+            "status": null,
+            "variable": "wind_burst",
+            "units": "m/s",
+            "format": "float",
+            "quality": null,
+            "datetime_format": "%Y-%m-%dT%H:%M:%SZ%z",
+            "datapath": "./output/wind_burst/91210WS.csv",
+            "start_date": null,
+            "end_date": null,
+            "step_mins": null
+        },
+        {
+            "id": "LF",
+            "status": null,
+            "variable": "relative_humidity",
+            "units": "%",
+            "format": "float",
+            "quality": null,
+            "datetime_format": "%Y-%m-%dT%H:%M:%SZ%z",
+            "datapath": "./output/relative_humidity/91210WS.csv",
+            "start_date": null,
+            "end_date": null,
+            "step_mins": null
+        }
+    ]
+}

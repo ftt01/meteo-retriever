@@ -1,0 +1,91 @@
+{
+    "id": 26,
+    "name": "91180SF",
+    "provider": {
+        "name": "meteoaltoadige",
+        "id": null,
+        "notes": {
+            "SCODE": "91180SF",
+            "NAME_D": "Sexten Rotwandwiesen",
+            "NAME_I": "Sesto Prati di Croda Rossa",
+            "NAME_L": "Sexten Rotwandwiesen",
+            "NAME_E": "Sexten Rotwandwiesen",
+            "ALT": 1910,
+            "LONG": 12.3704,
+            "LAT": 46.6636
+        }
+    },
+    "location": {
+        "x": 12.3704,
+        "y": 46.6636,
+        "z": 1910,
+        "EPSG": "4326"
+    },
+    "sensors": [
+        {
+            "id": "LT",
+            "status": null,
+            "variable": "temperature",
+            "units": "\u00b0C",
+            "format": "float",
+            "quality": null,
+            "datetime_format": "%Y-%m-%dT%H:%M:%SZ%z",
+            "datapath": "./output/temperature/91180SF.csv",
+            "start_date": null,
+            "end_date": null,
+            "step_mins": null
+        },
+        {
+            "id": "WG",
+            "status": null,
+            "variable": "wind_velocity",
+            "units": "m/s",
+            "format": "float",
+            "quality": null,
+            "datetime_format": "%Y-%m-%dT%H:%M:%SZ%z",
+            "datapath": "./output/wind_velocity/91180SF.csv",
+            "start_date": null,
+            "end_date": null,
+            "step_mins": null
+        },
+        {
+            "id": "WG.BOE",
+            "status": null,
+            "variable": "wind_burst",
+            "units": "m/s",
+            "format": "float",
+            "quality": null,
+            "datetime_format": "%Y-%m-%dT%H:%M:%SZ%z",
+            "datapath": "./output/wind_burst/91180SF.csv",
+            "start_date": null,
+            "end_date": null,
+            "step_mins": null
+        },
+        {
+            "id": "LF",
+            "status": null,
+            "variable": "relative_humidity",
+            "units": "%",
+            "format": "float",
+            "quality": null,
+            "datetime_format": "%Y-%m-%dT%H:%M:%SZ%z",
+            "datapath": "./output/relative_humidity/91180SF.csv",
+            "start_date": null,
+            "end_date": null,
+            "step_mins": null
+        },
+        {
+            "id": "HS",
+            "status": null,
+            "variable": "snow_depth",
+            "units": "cm",
+            "format": "float",
+            "quality": null,
+            "datetime_format": "%Y-%m-%dT%H:%M:%SZ%z",
+            "datapath": "./output/snow_depth/91180SF.csv",
+            "start_date": null,
+            "end_date": null,
+            "step_mins": null
+        }
+    ]
+}

@@ -1,0 +1,78 @@
+{
+    "id": 5,
+    "name": "45100WS",
+    "provider": {
+        "name": "meteoaltoadige",
+        "id": null,
+        "notes": {
+            "SCODE": "45100WS",
+            "NAME_D": "Gsies Regelspitze",
+            "NAME_I": "Casies Cima Regola",
+            "NAME_L": "Gsies Regelspitze",
+            "NAME_E": "Gsies Regelspitze",
+            "ALT": 2747,
+            "LONG": 12.2005,
+            "LAT": 46.8561
+        }
+    },
+    "location": {
+        "x": 12.2005,
+        "y": 46.8561,
+        "z": 2747,
+        "EPSG": "4326"
+    },
+    "sensors": [
+        {
+            "id": "LT",
+            "status": null,
+            "variable": "temperature",
+            "units": "\u00b0C",
+            "format": "float",
+            "quality": null,
+            "datetime_format": "%Y-%m-%dT%H:%M:%SZ%z",
+            "datapath": "./output/temperature/45100WS.csv",
+            "start_date": null,
+            "end_date": null,
+            "step_mins": null
+        },
+        {
+            "id": "WG",
+            "status": null,
+            "variable": "wind_velocity",
+            "units": "m/s",
+            "format": "float",
+            "quality": null,
+            "datetime_format": "%Y-%m-%dT%H:%M:%SZ%z",
+            "datapath": "./output/wind_velocity/45100WS.csv",
+            "start_date": null,
+            "end_date": null,
+            "step_mins": null
+        },
+        {
+            "id": "WG.BOE",
+            "status": null,
+            "variable": "wind_burst",
+            "units": "m/s",
+            "format": "float",
+            "quality": null,
+            "datetime_format": "%Y-%m-%dT%H:%M:%SZ%z",
+            "datapath": "./output/wind_burst/45100WS.csv",
+            "start_date": null,
+            "end_date": null,
+            "step_mins": null
+        },
+        {
+            "id": "LF",
+            "status": null,
+            "variable": "relative_humidity",
+            "units": "%",
+            "format": "float",
+            "quality": null,
+            "datetime_format": "%Y-%m-%dT%H:%M:%SZ%z",
+            "datapath": "./output/relative_humidity/45100WS.csv",
+            "start_date": null,
+            "end_date": null,
+            "step_mins": null
+        }
+    ]
+}

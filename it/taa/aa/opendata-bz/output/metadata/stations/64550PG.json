@@ -1,0 +1,65 @@
+{
+    "id": 18,
+    "name": "64550PG",
+    "provider": {
+        "name": "meteoaltoadige",
+        "id": null,
+        "notes": {
+            "SCODE": "64550PG",
+            "NAME_D": "GADER BEI MONTAL",
+            "NAME_I": "GADERA A MANTANA",
+            "NAME_L": "GRAN EGA A MANT\u00cbNA TOD\u00cbSCIA",
+            "NAME_E": "GADER BEI MONTAL",
+            "ALT": 813.27,
+            "LONG": 11.87967,
+            "LAT": 46.7761
+        }
+    },
+    "location": {
+        "x": 11.87967,
+        "y": 46.7761,
+        "z": 813.27,
+        "EPSG": "4326"
+    },
+    "sensors": [
+        {
+            "id": "Q",
+            "status": null,
+            "variable": "streamflow",
+            "units": "m\u00b3/s",
+            "format": "float",
+            "quality": null,
+            "datetime_format": "%Y-%m-%dT%H:%M:%SZ%z",
+            "datapath": "./output/streamflow/64550PG.csv",
+            "start_date": null,
+            "end_date": null,
+            "step_mins": null
+        },
+        {
+            "id": "W",
+            "status": null,
+            "variable": "hydro_level",
+            "units": "cm",
+            "format": "float",
+            "quality": null,
+            "datetime_format": "%Y-%m-%dT%H:%M:%SZ%z",
+            "datapath": "./output/hydro_level/64550PG.csv",
+            "start_date": null,
+            "end_date": null,
+            "step_mins": null
+        },
+        {
+            "id": "SSTF",
+            "status": null,
+            "variable": "suspended_solid",
+            "units": "mg/l",
+            "format": "float",
+            "quality": null,
+            "datetime_format": "%Y-%m-%dT%H:%M:%SZ%z",
+            "datapath": "./output/suspended_solid/64550PG.csv",
+            "start_date": null,
+            "end_date": null,
+            "step_mins": null
+        }
+    ]
+}
