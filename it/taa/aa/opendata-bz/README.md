@@ -1,3 +1,4 @@
+## SETUP
 1. Install Python: Ensure you have Python 3.9 installed. You can download it from the official Python website.
     
 2. Create an env
@@ -12,8 +13,9 @@
     pip install --upgrade pip
     pip install -r requirements.txt
 
-6. Run the script (change CONFIG_FILE and OUTPUT_PATH accordingly):
-    CONFIG_FILE=./etc/config/config.json && OUTPUT_PATH=/media/lacie2022/data/meteo/eu/it/taa/aa/online/ && python ./src/download.py --configuration_file=$CONFIG_FILE --output_path=$OUTPUT_PATH --no-docker
+## EXECUTE
+> Run the script (setup CONFIG_FILE if different):
+    pyenv activate opendata-bz && CONFIG_FILE=./etc/config/config.json && python3 ./src/download.py --configuration_file=$CONFIG_FILE --no-docker
 
 ALTERNATIVE with Docker:
 

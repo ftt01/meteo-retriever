@@ -460,7 +460,6 @@ if __name__ == "__main__":
     input_parser = argparse.ArgumentParser()
 
     input_parser.add_argument('--configuration_file', type=str, default="/home/chromedriver/etc/conf/config.json", required=False)
-    input_parser.add_argument('--output_path', type=str, default="/home/chromedriver/output/", required=False)
     input_parser.add_argument('--no-docker', action='store_true', help='Disable Docker')
     args = input_parser.parse_args()
 
@@ -470,8 +469,7 @@ if __name__ == "__main__":
         if args.no_docker:
             output_path = configuration['output']['path']
         else:
-            output_path = args.output_path
-            print("test")
+            output_path = "/home/chromedriver/output/"
 
         main(configuration, output_path)
         
