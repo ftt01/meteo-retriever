@@ -11,7 +11,7 @@
     "timezone": "UTC",
     "method": "update"
   },
-  "start_date": "20250514",
+  "start_date": "20250604",
   "end_date": null,
   "quality_check": false,
   "update_start_date": true,

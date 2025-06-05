@@ -253,7 +253,7 @@ def update_metadata( st_code, id_list, latitude=None, longitude=None, elevation=
     
     return curr_id
 
-def main(configuration_file, output_path):
+def main(configuration, output_path):
 
     mkNestedDir(output_path)
 
@@ -472,5 +472,15 @@ if __name__ == "__main__":
             output_path = "/home/chromedriver/output/"
 
         main(configuration, output_path)
-        
+
+        # Get yesterday's date and format it
+        yesterday = dt.datetime.now() - dt.timedelta(days=1)
+        configuration["start_date"] = yesterday.strftime("%Y%m%d")
+
+        config_file.close()
+    
+    # Save the updated configuration back to the file
+    with open(args.configuration_file, 'w') as config_file:
+        jdump(configuration, config_file, indent=4)
+
         config_file.close()
