@@ -1,4 +1,0 @@
-##### ERA5 ens
-screen -dmS "ens_era5_1" bash -c "trap 'echo gotsigint' INT; python3 /home/daniele/documents/github/ftt01/phd/data/meteo/providers/ecmwf/bin/era5/ens/grib2db.py -f adaptor.mars.internal-1685179895.7742114-5210-1-106e33ee-66c6-43c3-ab61-fe4bf2f60211.grib -s 2010-01-01T00:00:00 -e 2010-01-31T23:30:00; bash"
-
-screen -dmS "ens_era5_1" bash -c "trap 'echo gotsigint' INT; python3 /home/daniele/documents/github/ftt01/phd/data/meteo/providers/ecmwf/bin/era5/ens/grib2db.py -f adaptor.mars.internal-1685187635.2140503-5622-15-e5a35bc9-ceff-4b13-8212-61586ca3f55d.grib -s 2016-01-01T00:00:00 -e 2016-01-31T23:30:00; bash"
