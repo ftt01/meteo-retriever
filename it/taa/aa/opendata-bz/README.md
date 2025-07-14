@@ -2,16 +2,20 @@
 1. Install Python: Ensure you have Python 3.9 installed. You can download it from the official Python website.
     
 2. Create an env
-    pyenv virtualenv 3.9.7 opendata-bz
-    pyenv activate opendata-bz
+   
+    <code>pyenv virtualenv 3.9.7 opendata-bz</code>
+    
+    <code>pyenv activate opendata-bz</code>
 
-3. Install Google Chrome: Download and install Google Chrome from the official website.
+4. Install Google Chrome: Download and install Google Chrome from the official website.
 
-4. Install ChromeDriver: Download ChromeDriver from the official site. Ensure the version matches your Chrome version. Place the chromedriver executable in a directory included in your system's PATH or specify its location in your script.
+5. Install ChromeDriver: Download ChromeDriver from the official site. Ensure the version matches your Chrome version. Place the chromedriver executable in a directory included in your system's PATH or specify its location in your script.
 
-5. Install required Python packages:
-    pip install --upgrade pip
-    pip install -r requirements.txt
+6. Install required Python packages:
+   
+    <code>pip install --upgrade pip</code>
+    
+    <code>pip install -r requirements.txt</code>
 
 ## EXECUTE
 > Run as **script** (setup CONFIG_FILE if different):
