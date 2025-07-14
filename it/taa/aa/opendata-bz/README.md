@@ -17,7 +17,7 @@
 > Run the script (setup CONFIG_FILE if different):
     pyenv activate opendata-bz && CONFIG_FILE=./etc/config/config.json && python3 ./src/download.py --configuration_file=$CONFIG_FILE --no-docker
 
-ALTERNATIVE with Docker:
+> ALTERNATIVE with Docker:
 
 - build the image:
     docker build -f ./Dockerfile -t opendata-bz:2.0 .
