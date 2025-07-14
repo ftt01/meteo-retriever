@@ -14,13 +14,14 @@
     pip install -r requirements.txt
 
 ## EXECUTE
-> Run the script (setup CONFIG_FILE if different):
-    pyenv activate opendata-bz && CONFIG_FILE=./etc/config/config.json && python3 ./src/download.py --configuration_file=$CONFIG_FILE --no-docker
+> Run as **script** (setup CONFIG_FILE if different):
 
-> ALTERNATIVE with Docker:
+<code>pyenv activate opendata-bz && CONFIG_FILE=./etc/config/config.json && python3 ./src/download.py --configuration_file=$CONFIG_FILE --no-docker</code>
 
+> ALTERNATIVE with **Docker**:
 - build the image:
-    docker build -f ./Dockerfile -t opendata-bz:2.0 .
 
-- run the script (change CONFIG_FILE and OUTPUT_PATH accordingly)
-    CONFIG_FILE=./etc/config/config.json && OUTPUT_PATH=/media/lacie2022/data/meteo/eu/it/taa/aa/online/ && docker run --rm -v $CONFIG_FILE:/home/chromedriver/etc/conf/config.json -v $OUTPUT_PATH:/home/chromedriver/output/ opendata-bz:2.0
+    <code>docker build -f ./Dockerfile -t opendata-bz:2.0 .</code>
+- run the container (change CONFIG_FILE and OUTPUT_PATH accordingly)
+  
+    <code>CONFIG_FILE=./etc/config/config.json && OUTPUT_PATH=/media/lacie2022/data/meteo/eu/it/taa/aa/online/ && docker run --rm -v $CONFIG_FILE:/home/chromedriver/etc/conf/config.json -v $OUTPUT_PATH:/home/chromedriver/output/ opendata-bz:2.0</code>
