@@ -1,0 +1,83 @@
+{
+    "main" : {
+        "key" : "B001",
+        "name" : "alto_adige",
+        "bbox" : {
+            "lat_min" : 45.00,
+            "lat_max" : 47.50,
+            "lon_min" : 9.80,
+            "lon_max" : 13.00
+        }
+    },
+    "basins" : [{
+        "key" : "SB001",
+        "name" : "passirio_plan",
+        "bbox" : { 
+        "lat_min" : 45.00,
+        "lat_max" : 47.50,
+        "lon_min" : 9.80,
+        "lon_max" : 13.00
+        },
+        "ground_stations" : [{ 
+            "variable" : "precipitation",
+            "station_id" : "20500MS"
+        },{
+            "variable" : "temperature",
+            "station_id" : "20500MS"
+        },{
+            "variable" : "streamflow",
+            "station_id" : "20750PG"
+        }]
+    },{
+        "key" : "SB002",
+        "name" : "sarentino_corvara",
+        "bbox" : {
+            "lat_min" : 46.72,
+            "lat_max" : 46.82,
+            "lon_min" : 11.30,
+            "lon_max" : 11.50
+        },
+        "ground_stations" : [{ 
+            "variable" : "precipitation",
+            "station_id" : "80300MS"
+        },{
+            "variable" : "temperature",
+            "station_id" : "80300MS"
+        },{
+            "variable" : "streamflow",
+            "station_id" : null
+        }] 
+    },{
+        "key" : "SB003",
+        "name" : "sarentino_valdurna",
+        "bbox" : {
+            "lat_min" : 46.65,
+            "lat_max" : 46.78,
+            "lon_min" : 11.37,
+            "lon_max" : 11.515
+        },
+        "ground_stations" : [{ 
+            "variable" : "precipitation",
+            "station_id" : "82200MS"
+        },{
+            "variable" : "temperature",
+            "station_id" : "82200MS"
+        },{
+            "variable" : "streamflow",
+            "station_id" : null
+        }] 
+    },{
+        "key" : "SB004",
+        "name" : "passirio_enerpass",
+        "ground_stations" : [{ 
+            "variable" : "precipitation",
+            "station_id" : "20500MS"
+        },{
+            "variable" : "temperature",
+            "station_id" : "20500MS"
+        },{
+            "variable" : "streamflow",
+            "station_id" : "20750PG"
+        }]
+    }]
+}

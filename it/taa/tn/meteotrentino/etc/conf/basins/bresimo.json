@@ -1,0 +1,32 @@
+{
+    "main" : {
+        "key" : "B001",
+        "name" : "santa_giustina",
+        "bbox" : {
+            "lat_min" : 46.20,
+            "lat_max" : 46.50,
+            "lon_min" : 10.50,
+            "lon_max" : 11.05
+        }
+    },
+    "basins" : [{
+        "key" : "SB001",
+        "name" : "bresimo",
+        "bbox" : { 
+        "lat_min" : 46.32,
+        "lat_max" : 46.4550,
+        "lon_min" : 10.8550,
+        "lon_max" : 11.03
+        },
+        "ground_stations" : [{ 
+            "variable" : "precipitation",
+            "station_id" : null
+        },{
+            "variable" : "temperature",
+            "station_id" : null
+        },{
+            "variable" : "streamflow",
+            "station_id" : null
+        }]
+    }]
+}

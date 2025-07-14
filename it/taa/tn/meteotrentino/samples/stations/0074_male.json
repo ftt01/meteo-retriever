@@ -1,0 +1,226 @@
+{
+    "name": "Male`",
+    "providerName": "meteotrentino",
+    "providerInfo": {
+        "id": "T0074",
+        "id_num": "74",
+        "tableNumber": "32 042040",
+        "notes": "ATTIVA - M - Palo vento 6 m - POSIZIONI PRECEDENTI: dal 01/01/1921 al 26/11/1993 in 647188_E/5134764_N/720_msmm; dal 24/11/1993 al 01/08/2012 in 647417.0_E/5135284.0_N/735.0_msmm/c.e. 226; dal 19/06/2012 POSIZIONE ATTUALE"
+    },
+    "data": [
+        {
+            "variable": "precipitation",
+            "header": "0",
+            "columns": [
+                {
+                    "index": "0",
+                    "name": "datetime",
+                    "format": "HH:mm:ss dd/MM/yyyy"
+                },
+                {
+                    "index": "1",
+                    "name": "10 - Pioggia (millimetri)",
+                    "units": "mm",
+                    "format": "float"
+                },
+                {
+                    "index": "2",
+                    "name": "quality",
+                    "format": "integer",
+                    "style": {
+                        "1": "good",
+                        "140": "incert",
+                        "145": "not validated",
+                        "151": "N/A",
+                        "255": "N/A"
+                    }
+                }
+            ],
+            "location": [
+                {
+                    "id": "T0074_precipitation_1",
+                    "status": "inactive",
+                    "coordinates": [
+                        {
+                            "X": "647188",
+                            "Y": "5134764",
+                            "Z": "720",
+                            "EPSG": "32632"
+                        },
+                        {
+                            "lon": "10.9129894",
+                            "lat": "46.3504469",
+                            "Z": "720",
+                            "EPSG": "4326"
+                        }
+                    ],
+                    "start_date": "19210101",
+                    "end_date": "19931126",
+					"step_mins" : "10",
+                    "datapath": "T0074_precipitation_1.csv"
+                },
+                {
+                    "id": "T0074_precipitation_2",
+                    "status": "inactive",
+                    "coordinates": [
+                        {
+                            "X": "647417",
+                            "Y": "5135284",
+                            "Z": "735",
+                            "EPSG": "32632"
+                        },
+                        {
+                            "lon": "10.9161275",
+                            "lat": "46.3550742",
+                            "Z": "735",
+                            "EPSG": "4326"
+                        }
+                    ],
+                    "start_date": "19931124",
+                    "end_date": "20120801",
+					"step_mins" : "5",
+                    "datapath": "T0074_precipitation_2.csv"
+                },
+                {
+                    "id": "T0074_precipitation_3",
+                    "status": "active",
+                    "coordinates": [
+                        {
+                            "X": "647602",
+                            "Y": "5134902",
+                            "Z": "720",
+                            "EPSG": "32632"
+                        },
+                        {
+                            "lon": "10.9184105",
+                            "lat": "46.351598",
+                            "Z": "720",
+                            "EPSG": "4326"
+                        }
+                    ],
+                    "start_date": "20120619",
+                    "end_date": "",
+					"step_mins" : "5",
+                    "datapath": "T0074_precipitation_3.csv"
+                }
+            ]
+        },
+        {
+            "variable": "temperature",
+            "header": "0",
+            "columns": [
+                {
+                    "index": "0",
+                    "name": "datetime",
+                    "format": "HH:mm:ss dd/MM/yyyy"
+                },
+                {
+                    "index": "1",
+                    "name": "400 - Temperatura aria (gradi Celsius)",
+                    "units": "celsius",
+                    "format": "float"
+                },
+                {
+                    "index": "2",
+                    "name": "quality",
+                    "format": "integer",
+                    "style": {
+                        "1": "good",
+                        "140": "incert",
+                        "145": "not validated",
+                        "151": "N/A",
+                        "255": "N/A"
+                    }
+                }
+            ],
+            "location": [
+                {
+                    "id": "T0074_temperature_1",
+                    "status": "inactive",
+                    "coordinates": [
+                        {
+                            "X": "647188",
+                            "Y": "5134764",
+                            "Z": "720",
+                            "EPSG": "32632"
+                        },
+                        {
+                            "lon": "10.9129894",
+                            "lat": "46.3504469",
+                            "Z": "720",
+                            "EPSG": "4326"
+                        }
+                    ],
+                    "start_date": "19210101",
+                    "end_date": "19931126",
+					"step_mins" : "10",
+                    "datapath": "T0074_temperature_1.csv"
+                },
+				{
+                    "id": "T0074_temperature_2",
+                    "status": "inactive",
+                    "coordinates": [
+                        {
+                            "X": "647417",
+                            "Y": "5135284",
+                            "Z": "735",
+                            "EPSG": "32632"
+                        },
+                        {
+                            "lon": "10.9161275",
+                            "lat": "46.3550742",
+                            "Z": "735",
+                            "EPSG": "4326"
+                        }
+                    ],
+                    "start_date": "19931124",
+                    "end_date": "20040405",
+					"step_mins" : "60",
+                    "datapath": "T0074_temperature_2.csv"
+                },
+                {
+                    "id": "T0074_temperature_3",
+                    "status": "inactive",
+                    "coordinates": [
+                        {
+                            "X": "647417",
+                            "Y": "5135284",
+                            "Z": "735",
+                            "EPSG": "32632"
+                        },
+                        {
+                            "lon": "10.9161275",
+                            "lat": "46.3550742",
+                            "Z": "735",
+                            "EPSG": "4326"
+                        }
+                    ],
+                    "start_date": "19931124",
+                    "end_date": "20120801",
+					"step_mins" : "15",
+                    "datapath": "T0074_temperature_3.csv"
+                },
+				{
+                    "id": "T0074_temperature_4",
+                    "status": "active",
+                    "coordinates": [
+                        {
+                            "X": "647602",
+                            "Y": "5134902",
+                            "EPSG": "32632"
+                        },
+                        {
+                            "lon": "10.9184105",
+                            "lat": "46.351598",
+                            "EPSG": "4326"
+                        }
+                    ],
+                    "start_date": "20120619",
+                    "end_date": "",
+					"step_mins" : "15",
+                    "datapath": "T0074_temperature_4.csv"
+                }
+            ]
+        }
+    ]
+}

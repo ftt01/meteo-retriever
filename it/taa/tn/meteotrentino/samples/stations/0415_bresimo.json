@@ -1,0 +1,119 @@
+{
+    "name": "Bresimo (Malga Bordolona)",
+    "providerName": "meteotrentino",
+    "providerInfo": {
+        "id": "T0415",
+        "id_num": "415",
+        "tableNumber": "32 025150",
+        "notes": "ATTIVA - TP - dati pioggia invernali validi solo come cumulati"
+    },
+    "data": [
+        {
+            "variable": "precipitation",
+            "header": "0",
+            "columns": [
+                {
+                    "index": "0",
+                    "name": "datetime",
+                    "format": "HH:mm:ss dd/MM/yyyy"
+                },
+                {
+                    "index": "1",
+                    "name": "10 - Pioggia (millimetri)",
+                    "units": "mm",
+                    "format": "float"
+                },
+                {
+                    "index": "2",
+                    "name": "quality",
+                    "format": "integer",
+                    "style": {
+                        "1": "good",
+                        "90": "snow",
+                        "140": "incert",
+                        "145": "not validated",
+                        "151": "N/A",
+                        "255": "N/A"
+                    }
+                }
+            ],
+            "location": [
+                {
+                    "id": "T0415_precipitation_1",
+                    "status": "active",
+                    "coordinates": [
+                        {
+                            "X": "645148",
+                            "Y": "5143908",
+                            "Z": "1815",
+                            "EPSG": "32632"
+                        },
+                        {
+                            "lon": "10.8893275",
+                            "lat": "46.433136",
+                            "Z": "1815",
+                            "EPSG": "4326"
+                        }
+                    ],
+                    "start_date": "20120516",
+                    "end_date": "",
+					"step_mins" : "5",
+                    "datapath": "T0415_precipitation_1.csv"
+                }
+            ]
+        },
+        {
+            "variable": "temperature",
+            "header": "0",
+            "columns": [
+                {
+                    "index": "0",
+                    "name": "datetime",
+                    "format": "HH:mm:ss dd/MM/yyyy"
+                },
+                {
+                    "index": "1",
+                    "name": "400 - Temperatura aria (gradi Celsius)",
+                    "units": "celsius",
+                    "format": "float"
+                },
+                {
+                    "index": "2",
+                    "name": "quality",
+                    "format": "integer",
+                    "style": {
+                        "1": "good",
+                        "140": "incert",
+                        "145": "not validated",
+                        "151": "N/A",
+                        "255": "N/A"
+                    }
+                }
+            ],
+            "location": [
+                {
+                    "id": "T0415_temperature_1",
+                    "status": "active",
+                    "coordinates": [
+                        {
+                            "X": "645148",
+                            "Y": "5143908",
+                            "Z": "1815",
+                            "EPSG": "32632"
+                        },
+                        {
+                            "lon": "10.8893275",
+                            "lat": "46.433136",
+                            "Z": "1815",
+                            "EPSG": "4326"
+                        }
+                    ],
+                    "start_date": "19860101",
+                    "end_date": "20011231",
+					"step_mins" : "15",
+                    "datapath": "T0415_temperature_1.csv"
+                }
+            ]
+        }
+    ]
+}
