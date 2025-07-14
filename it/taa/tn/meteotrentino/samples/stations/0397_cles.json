@@ -1,0 +1,119 @@
+{
+    "name": "Cles (Maso Maiano)",
+    "providerName": "meteotrentino",
+    "providerInfo": {
+        "id": "T0397",
+        "id_num": "397",
+        "tableNumber": "32 043010",
+        "notes": "ATTIVA - TP - Stazione presso sito IASMA"
+    },
+    "data": [
+        {
+            "variable": "precipitation",
+            "header": "0",
+            "columns": [
+                {
+                    "index": "0",
+                    "name": "datetime",
+                    "format": "HH:mm:ss dd/MM/yyyy"
+                },
+                {
+                    "index": "1",
+                    "name": "10 - Pioggia (millimetri)",
+                    "units": "mm",
+                    "format": "float"
+                },
+                {
+                    "index": "2",
+                    "name": "quality",
+                    "format": "integer",
+                    "style": {
+                        "1": "good",
+                        "90": "snow",
+                        "140": "incert",
+                        "145": "not validated",
+                        "151": "N/A",
+                        "255": "N/A"
+                    }
+                }
+            ],
+            "location": [
+                {
+                    "id": "T0397_precipitation_1",
+                    "status": "active",
+                    "coordinates": [
+                        {
+                            "X": "656922",
+                            "Y": "5136199",
+                            "Z": "655",
+                            "EPSG": "32632"
+                        },
+                        {
+                            "lon": "11.0399028",
+                            "lat": "46.3611675",
+                            "Z": "655",
+                            "EPSG": "4326"
+                        }
+                    ],
+                    "start_date": "20120523",
+                    "end_date": "",
+                    "step_mins": "5",
+                    "datapath": "T0397_precipitation_1.csv"
+                }
+            ]
+        },
+        {
+            "variable": "temperature",
+            "header": "0",
+            "columns": [
+                {
+                    "index": "0",
+                    "name": "datetime",
+                    "format": "HH:mm:ss dd/MM/yyyy"
+                },
+                {
+                    "index": "1",
+                    "name": "400 - Temperatura aria (gradi Celsius)",
+                    "units": "celsius",
+                    "format": "float"
+                },
+                {
+                    "index": "2",
+                    "name": "quality",
+                    "format": "integer",
+                    "style": {
+                        "1": "good",
+                        "140": "incert",
+                        "145": "not validated",
+                        "151": "N/A",
+                        "255": "N/A"
+                    }
+                }
+            ],
+            "location": [
+                {
+                    "id": "T0397_temperature_1",
+                    "status": "active",
+                    "coordinates": [
+                        {
+                            "X": "656922",
+                            "Y": "5136199",
+                            "Z": "655",
+                            "EPSG": "32632"
+                        },
+                        {
+                            "lon": "11.0399028",
+                            "lat": "46.3611675",
+                            "Z": "655",
+                            "EPSG": "4326"
+                        }
+                    ],
+                    "start_date": "20120523",
+                    "end_date": "",
+                    "step_mins": "5",
+                    "datapath": "T0397_temperature_1.csv"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,162 @@
+{
+    "name": "Mezzana",
+    "providerName": "meteotrentino",
+    "providerInfo": {
+        "id": "T0071",
+        "id_num": "71",
+        "tableNumber": "32 042060",
+        "notes": "ATTIVA - M - Palo vento 10 m POSIZIONI PRECEDENTI: dal 01/01/1921 al 07/12/2004 in 638501E/5130917N, 935 msmm; dal 07/12/2004 posizione attuale e dal 31/08/2007 sovrapposizione in 638265E/5130435N, 905 msmm"
+    },
+    "data": [
+        {
+            "variable": "precipitation",
+            "header": "0",
+            "columns": [
+                {
+                    "index": "0",
+                    "name": "datetime",
+                    "format": "HH:mm:ss dd/MM/yyyy"
+                },
+                {
+                    "index": "1",
+                    "name": "10 - Pioggia (millimetri)",
+                    "units": "mm",
+                    "format": "float"
+                },
+                {
+                    "index": "2",
+                    "name": "quality",
+                    "format": "integer",
+                    "style": {
+                        "1": "good",
+                        "140": "incert",
+                        "145": "not validated",
+                        "151": "N/A",
+                        "255": "N/A"
+                    }
+                }
+            ],
+            "location": [
+                {
+                    "id": "T0071_precipitation_1",
+                    "status": "inactive",
+                    "coordinates": [
+                        {
+                            "X": "638501",
+                            "Y": "5130917",
+                            "Z": "935",
+                            "EPSG": "32632"
+                        },
+                        {
+                            "lon": "10.7990082",
+                            "lat": "46.3176744",
+                            "Z": "935",
+                            "EPSG": "4326"
+                        }
+                    ],
+                    "start_date": "19210101",
+                    "end_date": "20041206",
+					"step_mins" : "5",
+                    "datapath": "T0071_precipitation_1.csv"
+                },
+                {
+                    "id": "T0071_precipitation_2",
+                    "status": "active",
+                    "coordinates": [
+                        {
+                            "X": "638273",
+                            "Y": "5130427",
+                            "Z": "905",
+                            "EPSG": "32632"
+                        },
+                        {
+                            "lon": "10.7959039",
+                            "lat": "46.3133132",
+                            "Z": "905",
+                            "EPSG": "4326"
+                        }
+                    ],
+                    "start_date": "20041207",
+                    "end_date": "",
+					"step_mins" : "5",
+                    "datapath": "T0071_precipitation_2.csv"
+                }
+            ]
+        },
+        {
+            "variable": "temperature",
+            "header": "0",
+            "columns": [
+                {
+                    "index": "0",
+                    "name": "datetime",
+                    "format": "HH:mm:ss dd/MM/yyyy"
+                },
+                {
+                    "index": "1",
+                    "name": "400 - Temperatura aria (gradi Celsius)",
+                    "units": "celsius",
+                    "format": "float"
+                },
+                {
+                    "index": "2",
+                    "name": "quality",
+                    "format": "integer",
+                    "style": {
+                        "1": "good",
+                        "140": "incert",
+                        "145": "not validated",
+                        "151": "N/A",
+                        "255": "N/A"
+                    }
+                }
+            ],
+            "location": [
+                {
+                    "id": "T0071_temperature_1",
+                    "status": "inactive",
+                    "coordinates": [
+                        {
+                            "X": "638501",
+                            "Y": "5130917",
+                            "Z": "935",
+                            "EPSG": "32632"
+                        },
+                        {
+                            "lon": "10.7990082",
+                            "lat": "46.3176744",
+                            "Z": "935",
+                            "EPSG": "4326"
+                        }
+                    ],
+                    "start_date": "19210101",
+                    "end_date": "20041206",
+					"step_mins" : "60",
+                    "datapath": "T0071_temperature_1.csv"
+                },
+                {
+                    "id": "T0071_temperature_2",
+                    "status": "active",
+                    "coordinates": [
+                        {
+                            "X": "638273",
+                            "Y": "5130427",
+                            "Z": "905",
+                            "EPSG": "32632"
+                        },
+                        {
+                            "lon": "10.7959039",
+                            "lat": "46.3133132",
+                            "Z": "905",
+                            "EPSG": "4326"
+                        }
+                    ],
+                    "start_date": "20041207",
+                    "end_date": "",
+					"step_mins" : "15",
+                    "datapath": "T0071_temperature_2.csv"
+                }
+            ]
+        }
+    ]
+}
